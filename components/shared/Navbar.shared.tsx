@@ -4,12 +4,12 @@ import {menus} from "@/constants/menu.constant";
 
 function NavbarShared() {
     return (
-        <div className={`flex items-center w-screen p-2 border border-red-700`}>
-            <div className={``}>Logo</div>
-            <div className={`flex gap-3 `}>{menus.map(menu=>(
+        <div className={`flex items-center w-screen p-2`}>
+            <div className={`mr-20`}>Logo</div>
+            <div className={`flex gap-3 text-lg space-x-6 mr-10`}>{menus.map(menu => (
                 <div key={menu.name}>
                     <h2 className={`gap-5`}>
-                        <a href={menu.url} className={``}>{menu.name}</a>
+                        <a href={menu.url} className={`hover:underline`}>{menu.name}</a>
                     </h2>
                 </div>
             ))}
